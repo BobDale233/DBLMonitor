@@ -2,11 +2,12 @@
 //  AppDelegate.m
 //  DBLMonitor
 //
-//  Created by LeeeBaoy on 2019/7/30.
+//  Created by Bob.Dale on 2019/7/30.
 //  Copyright © 2019 Bob.Dale. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "HomeViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[HomeViewController alloc] init]];
     return YES;
 }
 
